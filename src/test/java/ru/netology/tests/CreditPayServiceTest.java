@@ -1,2 +1,4 @@
-package ru.netology.tests;public class CreditPayServiceTest {
+package ru.netology.tests;
+
+public class CreditPayServiceTest {
 }
