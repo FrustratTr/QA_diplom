@@ -22,13 +22,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">44</div>
+<div class="counter">22</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">27</div>
+<div class="counter">22</div>
 <p>failures</p>
 </div>
 </td>
@@ -40,7 +40,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m22.54s</div>
+<div class="counter">0.123s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,7 +50,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">38%</div>
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -72,6 +72,14 @@
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
 <a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveAllEmptyField()">Все поля не заполнены</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveEmptyCVCRestFieldValid()">CVC поле пустое, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveEmptyHolderRestFieldValid()">Поле с владельцем пустое, остальное заполнено валидными данными</a>
 </li>
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
@@ -107,6 +115,10 @@
 </li>
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveMonthAboveRangeRestFieldValid()">Месяц указан свыше допустимого, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
 <a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveMonthBelowRangeRestFieldValid()">Месяц указан ниже допустимого, остальное заполнено валидными данными</a>
 </li>
 <li>
@@ -115,7 +127,27 @@
 </li>
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveNonExistentShortCardRestFieldValid()">Поле карта заполнено не полностью, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveOneNumberInCVCRestFieldValid()">Одно число в CVC, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
 <a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHavePreviousMonthRestFieldValid()">Месяц указан предыдущий, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveTwoNumberInCVCRestFieldValid()">Два числа в CVC, остальное заполнено валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveYearAboveRangeRestFieldValid()">Год указан выше допустимого, остальные поля заполнены валидными данными</a>
+</li>
+<li>
+<a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
+<a href="../classes/ru.netology.tests.CardCreditTest.html#CreditFormShouldHaveYearBelowRangeRestFieldValid()">Год указан ниже актуального, остальные поля заполнены валидными данными</a>
 </li>
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
@@ -124,58 +156,6 @@
 <li>
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>.
 <a href="../classes/ru.netology.tests.CardCreditTest.html#creditFormShouldHaveAllValidFieldRUS()">Все поля заполнены валидными данными(CreditPage, RUS)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveAllEmptyField()">Все поля не заполнены</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveAllValidFieldENG()">Все поля заполнены валидными данными(CreditPage, ENG)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveAllValidFieldRUS()">Все поля заполнены валидными данными(CreditPage, RUS)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveEmptyMonthRestFieldValid()">Поле с месяцем пустое, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveEmptyNumberCardRestFieldValid()">Поле с картой пустое, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveEmptyYearRestFieldValid()">Поле с годом пустое, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveHolderWithHieroglyphsRestFieldValidCN()">Поле Владелец содержит иероглифы, остальное заполнено валидными данными(CreditPage, CN)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveHolderWithHyphenatedRestFieldValidENG()">Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, ENG)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveHolderWithHyphenatedRestFieldValidRUS()">Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, RUS)</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveHolderWithNumberRestFieldValid()">Поле владелец заполнено числами, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveHolderWithSpecialSymbolRestFieldValid()">Поле Владелец содержит спец.символы, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHaveNonExistentCardRestFieldValid()">В поле карта указана несуществующая карта, остальное заполнено валидными данными</a>
-</li>
-<li>
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>.
-<a href="../classes/ru.netology.tests.CardTest.html#paymentFormShouldHavePreviousMonthRestFieldValid()">Месяц указан предыдущий, остальное заполнено валидными данными</a>
 </li>
 </ul>
 </div>
@@ -197,20 +177,10 @@
 <a href="../classes/ru.netology.tests.CardCreditTest.html">CardCreditTest</a>
 </td>
 <td>22</td>
-<td>14</td>
-<td>0</td>
-<td>1m49.87s</td>
-<td class="failures">36%</td>
-</tr>
-<tr>
-<td class="failures">
-<a href="../classes/ru.netology.tests.CardTest.html">CardTest</a>
-</td>
 <td>22</td>
-<td>13</td>
 <td>0</td>
-<td>1m32.67s</td>
-<td class="failures">40%</td>
+<td>0.123s</td>
+<td class="failures">0%</td>
 </tr>
 </table>
 </div>
@@ -222,7 +192,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 29 янв. 2024 г., 20:03:39</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 29 янв. 2024 г., 20:37:46</p>
 </div>
 </div>
 </body>
