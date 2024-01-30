@@ -38,7 +38,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Все поля заполнены валидными данными(CreditPage, RUS)")
-    void creditFormShouldHaveAllValidFieldRUS() {
+    void creditAllFieldsValidRusS() {
         CardPage start = new CardPage();
         start.cardPage();
         var CreditPage = start.buyInCredit();
@@ -57,7 +57,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Все поля заполнены валидными данными(CreditPage, ENG)")
-    void creditFormShouldHaveAllValidFieldENG() {
+    void creditAllFieldsValidEng() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage CreditPage = start.buyInCredit();
@@ -75,7 +75,7 @@ public class CardCreditTest {
     }
     @Test
     @DisplayName("Все поля не заполнены")
-    void CreditFormShouldHaveAllEmptyField() {
+    void CreditAllFieldEmpty() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -88,7 +88,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле с картой пустое, остальное заполнено валидными данными")
-    void CreditFormShouldHaveEmptyNumberCardRestFieldValid() {
+    void CreditEmptyCardNumberRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -105,7 +105,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле с месяцем пустое, остальное заполнено валидными данными")
-    void CreditFormShouldHaveEmptyMonthRestFieldValid() {
+    void CreditEmptyMonthRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -122,7 +122,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле с годом пустое, остальное заполнено валидными данными")
-    void CreditFormShouldHaveEmptyYearRestFieldValid() {
+    void CreditEmptyYearRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -139,7 +139,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле с владельцем пустое, остальное заполнено валидными данными")
-    void CreditFormShouldHaveEmptyHolderRestFieldValid() {
+    void CreditEmptyHolderRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -156,7 +156,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("CVC поле пустое, остальное заполнено валидными данными")
-    void CreditFormShouldHaveEmptyCVCRestFieldValid() {
+    void CreditEmptyCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -173,7 +173,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("В поле карта указана несуществующая карта, остальное заполнено валидными данными")
-    void CreditFormShouldHaveNonExistentCardRestFieldValid() {
+    void CreditNonExistentCardRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -191,7 +191,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле карта заполнено не полностью, остальное заполнено валидными данными")
-    void CreditFormShouldHaveNonExistentShortCardRestFieldValid() {
+    void CreditNonExistentShortCardRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -209,7 +209,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Месяц указан свыше допустимого, остальное заполнено валидными данными")
-    void CreditFormShouldHaveMonthAboveRangeRestFieldValid() {
+    void CreditMonthAboveRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -227,7 +227,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Месяц указан ниже допустимого, остальное заполнено валидными данными")
-    void CreditFormShouldHaveMonthBelowRangeRestFieldValid() {
+    void CreditMonthBelowRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -245,7 +245,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Месяц указан предыдущий, остальное заполнено валидными данными")
-    void CreditFormShouldHavePreviousMonthRestFieldValid() {
+    void CreditPreviousMonthRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -263,7 +263,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Год указан выше допустимого, остальные поля заполнены валидными данными")
-    void CreditFormShouldHaveYearAboveRangeRestFieldValid() {
+    void CreditYearAboveRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -281,7 +281,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Год указан ниже актуального, остальные поля заполнены валидными данными")
-    void CreditFormShouldHaveYearBelowRangeRestFieldValid() {
+    void CreditYearBelowRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -298,7 +298,7 @@ public class CardCreditTest {
     }
     @Test
     @DisplayName("Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, RUS)")
-    void CreditFormShouldHaveHolderWithHyphenatedRestFieldValidRUS() {
+    void CreditHolderWithHyphenatedRestFieldValidRus() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -316,7 +316,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, ENG)")
-    void CreditFormShouldHaveHolderWithHyphenatedRestFieldValidENG() {
+    void CreditHolderWithHyphenatedRestFieldValidEng() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -334,7 +334,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле Владелец содержит иероглифы, остальное заполнено валидными данными(CreditPage, CN)")
-    void CreditFormShouldHaveHolderWithHieroglyphsRestFieldValidCN() {
+    void CreditHolderWithHieroglyphsRestFieldValidCN() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -352,7 +352,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле Владелец содержит спец.символы, остальное заполнено валидными данными")
-    void CreditFormShouldHaveHolderWithSpecialSymbolRestFieldValid() {
+    void CreditHolderWithSpecialSymbolRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -370,7 +370,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Поле владелец заполнено числами, остальное заполнено валидными данными")
-    void CreditFormShouldHaveHolderWithNumberRestFieldValid() {
+    void CreditHolderWithNumberRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -388,7 +388,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Одно число в CVC, остальное заполнено валидными данными")
-    void CreditFormShouldHaveOneNumberInCVCRestFieldValid() {
+    void CreditOneNumberInCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();
@@ -406,7 +406,7 @@ public class CardCreditTest {
 
     @Test
     @DisplayName("Два числа в CVC, остальное заполнено валидными данными")
-    void CreditFormShouldHaveTwoNumberInCVCRestFieldValid() {
+    void CreditTwoNumberInCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         CreditPage creditPage = start.buyInCredit();

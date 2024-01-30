@@ -42,7 +42,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Все поля заполнены валидными данными(CreditPage, RUS)")
-    void paymentFormShouldHaveAllValidFieldRUS() {
+    void paymentAllFieldsValidRus() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -62,7 +62,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Все поля заполнены валидными данными(CreditPage, ENG)")
-    void paymentFormShouldHaveAllValidFieldENG() {
+    void paymentAllFieldsValidEng() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -83,7 +83,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Все поля не заполнены")
-    void paymentFormShouldHaveAllEmptyField() {
+    void paymentAllFieldEmpty() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -96,7 +96,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле с картой пустое, остальное заполнено валидными данными")
-    void paymentFormShouldHaveEmptyNumberCardRestFieldValid() {
+    void paymentEmptyCardNumberRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -114,7 +114,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле с месяцем пустое, остальное заполнено валидными данными")
-    void paymentFormShouldHaveEmptyMonthRestFieldValid() {
+    void paymentEmptyMonthRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -132,7 +132,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле с годом пустое, остальное заполнено валидными данными")
-    void paymentFormShouldHaveEmptyYearRestFieldValid() {
+    void paymentEmptyYearRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -149,7 +149,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле с владельцем пустое, остальное заполнено валидными данными")
-    void paymentFormShouldHaveEmptyHolderRestFieldValid() {
+    void paymentEmptyHolderRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -166,7 +166,7 @@ public class CardTest {
 
     @Test
     @DisplayName("CVC поле пустое, остальное заполнено валидными данными")
-    void paymentFormShouldHaveEmptyCVCRestFieldValid() {
+    void paymentEmptyCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -183,7 +183,7 @@ public class CardTest {
 
     @Test
     @DisplayName("В поле карта указана несуществующая карта, остальное заполнено валидными данными")
-    void paymentFormShouldHaveNonExistentCardRestFieldValid() {
+    void paymentNonExistentCardRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -201,7 +201,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле карта заполнено не полностью, остальное заполнено валидными данными")
-    void paymentFormShouldHaveNonExistentShortCardRestFieldValid() {
+    void paymentNonExistentShortCardRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -219,7 +219,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Месяц указан свыше допустимого, остальное заполнено валидными данными")
-    void paymentFormShouldHaveMonthAboveRangeRestFieldValid() {
+    void paymentMonthAboveRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -237,7 +237,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Месяц указан ниже допустимого, остальное заполнено валидными данными")
-    void paymentFormShouldHaveMonthBelowRangeRestFieldValid() {
+    void paymentMonthBelowRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -255,7 +255,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Месяц указан предыдущий, остальное заполнено валидными данными")
-    void paymentFormShouldHavePreviousMonthRestFieldValid() {
+    void paymentPreviousMonthRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -273,7 +273,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Год указан выше допустимого, остальные поля заполнены валидными данными")
-    void paymentFormShouldHaveYearAboveRangeRestFieldValid() {
+    void paymentYearAboveRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -291,7 +291,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Год указан ниже актуального, остальные поля заполнены валидными данными")
-    void paymentFormShouldHaveYearBelowRangeRestFieldValid() {
+    void paymentYearBelowRangeRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -309,7 +309,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, RUS)")
-    void paymentFormShouldHaveHolderWithHyphenatedRestFieldValidRUS() {
+    void paymentHolderWithHyphenatedRestFieldValidRus() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -327,7 +327,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле Владелец содержит данные через дефис, остальное заполнено валидными данными(CreditPage, ENG)")
-    void paymentFormShouldHaveHolderWithHyphenatedRestFieldValidENG() {
+    void paymentHolderWithHyphenatedRestFieldValidEng() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -345,7 +345,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле Владелец содержит иероглифы, остальное заполнено валидными данными(CreditPage, CN)")
-    void paymentFormShouldHaveHolderWithHieroglyphsRestFieldValidCN() {
+    void paymentHolderWithHieroglyphsRestFieldValidCN() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -363,7 +363,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле Владелец содержит спец.символы, остальное заполнено валидными данными")
-    void paymentFormShouldHaveHolderWithSpecialSymbolRestFieldValid() {
+    void paymentHolderWithSpecialSymbolRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -381,7 +381,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Поле владелец заполнено числами, остальное заполнено валидными данными")
-    void paymentFormShouldHaveHolderWithNumberRestFieldValid() {
+    void paymentHolderWithNumberRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -398,7 +398,7 @@ public class CardTest {
     }
     @Test
     @DisplayName("Одно число в CVC, остальное заполнено валидными данными")
-    void paymentFormShouldHaveOneNumberInCVCRestFieldValid() {
+    void paymentOneNumberInCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
@@ -416,7 +416,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Два числа в CVC, остальное заполнено валидными данными")
-    void paymentFormShouldHaveTwoNumberInCVCRestFieldValid() {
+    void paymentTwoNumberInCVCRestFieldValid() {
         CardPage start = new CardPage();
         start.cardPage();
         PaymentPage paymentPage = start.buy();
