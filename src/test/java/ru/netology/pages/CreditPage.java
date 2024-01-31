@@ -4,6 +4,8 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -43,13 +45,11 @@ public class CreditPage {
     }
 
     public void checkNotificationGood() {
-        notificationGood.shouldBe(Condition.visible);
-        notificationGood.shouldHave(Condition.exactText("Успешно Операция одобрена Банком."));
+        notificationGood.shouldBe(Condition.visible, Duration.ofSeconds(10)).shouldHave(Condition.exactText("Успешно\n" + "Операция одобрена Банком."));
     }
 
     public void checkNotificationError() {
-        notificationError.shouldBe(Condition.visible);
-        notificationError.shouldHave(Condition.exactText("Ошибка Ошибка! Банк отказал в проведении операции."));
+        notificationError.shouldBe(Condition.visible, Duration.ofSeconds(10)).shouldHave(Condition.exactText("Ошибка\n" + "Ошибка! Банк отказал в проведении операции."));
     }
 
     public void checkNotification(Condition condition, String text) {

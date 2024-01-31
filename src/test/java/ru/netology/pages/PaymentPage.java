@@ -4,6 +4,8 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -53,11 +55,11 @@ public class PaymentPage {
     }
 
     public void checkNotificationGood() {
-        notificationGood.should(new Condition[]{Condition.visible, Condition.exactText("Успешно\n" + "Операция одобрена Банком.")}).shouldBe(Condition.visible);
+        notificationGood.shouldBe(Condition.visible, Duration.ofSeconds(10)).shouldHave(Condition.exactText("Успешно\n" + "Операция одобрена Банком."));
     }
 
-    public void checkNotificationError() {
-        notificationError.should(new Condition[]{Condition.visible, Condition.exactText("Ошибка\n" + "Ошибка! Банк отказал в проведении операции.")}).shouldBe(Condition.visible);
+    public void checkNotificationError(){
+        notificationError.shouldBe(Condition.visible, Duration.ofSeconds(10)).shouldHave(Condition.exactText("Ошибка\n" + "Ошибка! Банк отказал в проведении операции."));
     }
 
 
