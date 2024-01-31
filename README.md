@@ -11,6 +11,13 @@
 2. [Отчёт о проведенном тестировании](https://github.com/FrustratTr/QA_diplom/blob/main/Documents/Report.md)
 3. [Отчёт по итогам автоматизации](https://github.com/FrustratTr/QA_diplom/blob/main/Documents/Summary.md)
 
+### Перед началом запуска необходимо установить:
+1. IntelliJ IDEA
+2. GIT
+3. Google Chrome
+4. Docker desktop/Docker tools
+5. Postman
+
 ## Запуск автотестов и начало работы:
 * Склонировать [репозиторий](https://github.com/FrustratTr/QA_diplom) себе на ПК командой `git clone`
 * Открыть проект в IDEA
@@ -22,8 +29,8 @@
 Для PostgreSQL команду `java -jar aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app`
 * Запустить автотесты, открыв новую вкладку терминала и использовать команду:
 
-Для MySQL команду .\gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app" allureReport
+Для MySQL команду `.\gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app" allureReport`
 
-Для PostgreSQL команду .\gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432 /app" allureReport
-* Использовать команду .\gradlew allureserve для генерации отчета в браузере
+Для PostgreSQL команду `.\gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432 /app" allureReport`
+* Использовать команду `.\gradlew allureserve` для генерации отчета в браузере
 * После тестирования закрыть вкладки терминала для остановки .jar файла и ввести команду `docker-compose down` для приостановки работы контейнеров.
